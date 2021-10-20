@@ -1,0 +1,9 @@
+# Ignored folders
+node_modules
+config
+.env
+.DS_Store
+
+# Ignore Logs folder and files
+logs
+*.log

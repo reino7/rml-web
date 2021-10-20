@@ -1,0 +1,27 @@
+{
+  "name": "rml-web",
+  "version": "1.0.0",
+  "description": "Rapla Maakonna Lauatennise www.rapla.lt veebileht",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/reino7/rml-web"
+  },
+  "keywords": [
+    "tabletennis",
+    "website",
+    "Rapla",
+    "County"
+  ],
+  "author": "Reino Ristissaar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "pug": "^3.0.2"
+  }
+}

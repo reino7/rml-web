@@ -1,0 +1,97 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='Raplamaa Lauatennis')
+  meta(name='keywords' content='Rapla, Raplamaa, Rapla Maakond, lauatennis, pinks, võistlus')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='icon' href='favicon.ico')
+  link(rel='stylesheet' href='css/fontawesome-v5.15.4.min.css')
+  link(rel='stylesheet' href='css/bootstrap-v5.1.3.min.css')
+  link(rel='stylesheet' href='css/main.css')
+  title Raplamaa Lauatennis
+header.container.fixed-top.bg-white.border-bottom
+  nav.d-flex.flex-wrap.justify-content-center.py-3
+    a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-dark.text-decoration-none(href='/')
+      i.fas.fa-table-tennis.fa-2x.px-3
+      h5.my-0.mr-md-auto.text-uppercase.fw-bold
+        | Raplamaa Lauatennis
+    ul.nav.nav-pills.text-uppercase
+      li.nav-item
+        a.text-dark.fw-bold.nav-link(href='/ajakava') Ajakava
+      li.nav-item
+        a.text-dark.fw-bold.nav-link(href='/voistlusjuhend') V&otilde;istlusjuhend
+    //
+      <div class="text-end ps-3">
+      <a href="#" class="btn btn-outline-dark me-2">Logi sisse</a>
+      </div>
+main.flex-shrink-0
+  .container
+    div
+      h5.text-uppercase.fw-bold.text-center.mb-3 Ajakava
+    table#competitions.table.table-responsive.table-striped.table-bordered
+      thead.table-secondary
+        tr
+          th.text-center Kuup&auml;ev
+          th V&otilde;istluse nimetus
+          th V&otilde;istluse asukoht
+      tbody
+        tr
+          td.text-center 19.09.2021
+          td Rapla Maakonna meistriv&otilde;istlused - individuaal, paar ja segapaar 
+          td Alu Spordihoone
+        tr
+          td.text-center 23.10.2021
+          td Raplamaa seeriav&otilde;istluse 1. etapp - Kaiu auhindadele
+          td Alu Spordihoone
+        tr
+          td.text-center 31.10.2021
+          td Rapla SVK Meistriv&otilde;istlused Lauatennises ja Koroonas
+          td Valtu Spordimaja
+        tr
+          td.text-center 27.11.2021
+          td Raplamaa seeriav&otilde;istluse 2. etapp - M&auml;rjamaa auhindadele
+          td M&auml;rjamaa Spordihoone
+        tr
+          td.text-center 28.11.2021
+          td Rapla Maakonna v&otilde;istkondlikud Meistriv&otilde;istlused lauatennises
+          td Valtu Spordimaja
+        tr
+          td.text-center 11.12.2021
+          td Raplamaa seeriav&otilde;istluse 3. etapp - Alu Spordiklubi auhindadele
+          td Alu Spordihoone
+        tr
+          td.text-center 19.12.2021
+          td Rapla Maakonna individuaal karikav&otilde;istlused lauatennises
+          td Valtu Spordimaja
+        tr
+          td.text-center 22.01.2022
+          td Raplamaa seeriav&otilde;istluse 4. etapp - Rapla auhindadele
+          td Valtu Spordimaja
+        tr
+          td.text-center 19.02.2022
+          td Raplamaa seeriav&otilde;istluse 5. etapp - Kohila auhindadele
+          td Kohila Spordikompleks
+        tr
+          td.text-center 05.03.2022
+          td Raplamaa seeriav&otilde;istluse 6. etapp - J&auml;rvakandi auhindadele
+          td J&auml;rvakandi Kool
+        tr
+          td.text-center 09.04.2022
+          td Raplamaa seeriav&otilde;istluse 7. etapp - Valtu auhindadele
+          td Valtu Spordimaja
+        tr
+          td.text-center 16.04.2022
+          td Rapla Maakonna meistriv&otilde;istlused - individuaal, paar ja segapaar 
+          td Valtu Spordimaja
+        tr
+          td.text-center 23.04.2022
+          td Ennu Soodla m&auml;lestusv&otilde;istlus
+          td Alu Spordiklubi
+.container
+  footer.py-3.my-4
+    ul.nav.justify-content-center.border-bottom.pb-3.mb-3
+    p.text-center.text-muted.mb-1 Raplamaa Lauatennis 2021
+// Popper, Bootstrap and Main JavaScript files
+script(src='js/popper-v2.10.2.min.js')
+script(src='js/bootstrap-v5.1.3.min.js')
+script(src='js/main.js')
