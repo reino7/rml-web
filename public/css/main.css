@@ -1,6 +1,9 @@
 body {
-  min-height: 75rem;
-  padding-top: 9rem;
+  min-height: 60rem;
+  padding-top: 5rem;
+}
+main > .container {
+  padding: 60px 15px 0;
 }
 .nav-item::after {
   content:'';
