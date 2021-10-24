@@ -5,7 +5,6 @@ let newDate = new Date(Date.now());
 
 
 router.use(function (req, res, next) {
-  console.log(`${newDate.toLocaleDateString()} ${newDate.toLocaleTimeString()}`, "@", req.url)
   next();
 });
 

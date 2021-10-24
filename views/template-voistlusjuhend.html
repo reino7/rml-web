@@ -17,26 +17,42 @@
 
 <body>
 
-  <header class="container fixed-top bg-white border-bottom">
-    <nav class="d-flex flex-wrap justify-content-center py-3">
+  <header>
 
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <i class="fas fa-table-tennis fa-2x px-3"></i>
-        <h5 class="my-0 mr-md-auto text-uppercase fw-bold">
-          Raplamaa Lauatennis
-        </h5>
-      </a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom fixed-top">
+      <div class="container">
 
-      <ul class="nav nav-pills text-uppercase">
-        <li class="nav-item"><a href="#" class="text-dark fw-bold nav-link">Ajakava</a></li>
-        <li class="nav-item"><a href="#" class="text-dark fw-bold nav-link">Võistlusjuhend</a></li>
-      </ul>
+        <div>
+          <a class="text-reset text-decoration-none" href="/">
+            <i class="fas fa-table-tennis fa-2x"></i>
+          </a>
+          <a class="navbar-brand text-uppercase fw-bold" href="/">
+            Raplamaa Lauatennis
+          </a>
+        </div>
 
-      <!-- <div class="text-end ps-3">
-        <a href="#" class="btn btn-outline-dark me-2">Logi sisse</a>
-      </div> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-list">
+          <ul class="navbar-nav text-uppercase fw-bold">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/ajakava">Ajakava</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/voistlusjuhend">Võistlusjuhend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </nav>
+
   </header>
 
   <main>
@@ -147,13 +163,14 @@
         mängijale maha müüa. Hinnaks on uue inventari soetusmaksumus.
       </p>
 
-      <p class="text-danger">
+      <p class="text-danger my-5">
         Koos registreerumisega annab võistleja nõusoleku võistlusprotokollide avalikustamiseks, võistlustulemuste ning
         fotode kajastamiseks sotsiaalmeedias ja meedias (ajakirjandus, televisioon, raadio) , ning edetabeli
         koostamisel.
         <br />Korraldav toimkond jätab endale õiguse vajadusel teha juhendis muudatusi.
       </p>
 
+      <p>&nbsp;</p>
 
     </div>
 

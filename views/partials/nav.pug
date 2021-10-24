@@ -1,0 +1,18 @@
+header
+  nav.navbar.navbar-expand-sm.navbar-light.bg-light.border-bottom.fixed-top
+    .container
+      div
+        a.text-reset.text-decoration-none(href='/')
+          i.fas.fa-table-tennis.fa-2x
+        a.navbar-brand.text-uppercase.fw-bold(href='/')
+          span &nbsp;Raplamaa Lauatennis
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbar-list' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      div(id='navbar-list').navbar-list.collapse.navbar-collapse.justify-content-end
+        ul.navbar-nav.text-uppercase.fw-bold
+          li.nav-item
+            a.nav-link.text-dark(href='/ajakava') Ajakava
+          li.nav-item
+            a.nav-link.text-dark(href='/voistlusjuhend') V&otilde;istlusjuhend
+          li.nav-item
+            a.nav-link.text-dark(href='/tulemused') Tulemused

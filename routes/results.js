@@ -11,7 +11,7 @@ router.use(function (req, res, next) {
 router
   .route("/")
   .get((req, res) => {
-    res.render("schedule")
+    res.render("results")
   })
 
 
