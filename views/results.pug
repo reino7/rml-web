@@ -5,5 +5,22 @@ main.flex-shrink-0
   .container
     div
       h5.text-uppercase.fw-bold.text-center.mb-3 Tulemused
-
+    table#competitions.table.table-responsive.table-striped.table-bordered
+      thead.table-secondary
+        tr
+          th.text-center Kuup&auml;ev
+          th V&otilde;istluse nimetus
+          th Failid
+      tbody
+        tr
+          td.text-center.align-middle 23.10.2021
+          td.align-middle Raplamaa seeriav&otilde;istluse 1. etapp - Kaiu auhindadele
+          td.align-middle
+            a.text-decoration-none.text-reset(href='files/2021-10-19-raplamaa-seeriavõistluse-1etapp-kaiu-auhindadele.pdf' target='_blank')
+              i.far.fa-file-pdf(data-bs-toggle='tooltip' data-bs-placement='top' title='Võistlustabel')
+              |                 V&otilde;istlustabel
+            br
+            a.text-decoration-none.text-reset(href='files/2021-10-19-raplamaa-seeriavõistluse-tulemused-peale-1etappi.pdf' target='_blank')
+              i.far.fa-file-pdf(data-bs-toggle='tooltip' data-bs-placement='top' title='Tulemused peale 1. etappi')
+              |                 Tulemused peale 1. etappi
 include partials/footer.pug

@@ -7,3 +7,4 @@ config
 # Ignore Logs folder and files
 logs
 *.log
+*.pdf
