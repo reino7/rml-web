@@ -8,16 +8,22 @@ main > .container {
 .nav-item::after {
   content:'';
   display:block;
-  width:0px;
-  height:1px;
-  background:#212529;
-  transition: 0.3s;
+  width:100%;
+	height: 0.1em;
+  background:#6f7377;
+  opacity: 0;
+  transform: translate3d(0, 0.2em, 0);
+  transform: scale(0);
+  transition: opacity 500ms, transform 500ms;
+  /* transition: 0.3s; */
 }
 .nav-item:hover::after {
   width:100%;
+  opacity: 1;
+  transform: scale(1);
 }
 .nav-link {
   /* font-size: 1.1rem;  Default 1rem */
-  transition:0.3s;
+  /* transition:0.3s; */
   margin-top: 5px;
 }
