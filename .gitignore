@@ -1,7 +1,7 @@
-# Ignored folders
+# Ignored folders and files
 node_modules
 config
-.env
+.env*
 .DS_Store
 
 # Ignore Logs folder and files
