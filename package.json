@@ -17,17 +17,16 @@
     "Rapla",
     "County"
   ],
-  "author": "Reino Ristissaar",
+  "author": "Reino",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "dotenv": "^10.0.0",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
-    "express-flash": "0.0.2",
-    "express-session": "^1.17.2",
+    "helmet": "^6.0.0",
     "moment-timezone": "^0.5.34",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.13",
-    "passport-local": "^1.0.0",
-    "pug": "^3.0.2"
+    "nodemon": "^2.0.13"
   }
 }

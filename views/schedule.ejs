@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="h-100 wxauktc idc0_332" lang="et">
+  <head>
+    <%- include('./partials/head'); %>
+    <script src="/js/moment-v2.29.1.js" defer></script>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header><%- include('./partials/header'); %></header>
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div>
+          <h5 class="text-uppercase fw-bold text-center mb-3">Ajakava</h5>
+        </div>
+
+        <table
+          class="table table-responsive table-striped table-bordered me-4"
+          id="table"
+        >
+          <thead class="table-secondary">
+            <tr>
+              <th class="text-center">Kuupäev</th>
+              <th class="text-center">Algusaeg</th>
+              <th>Võistluse nimetus</th>
+              <th>Võistluskoht</th>
+              <th>Aadress</th>
+            </tr>
+          </thead>
+
+          <tbody id="competitionsTable">
+            <tr>
+              <td class="text-center">08.10.2022</td>
+              <td class="text-center">10:00</td>
+              <td>Raplamaa seeriavõistluse 1. etapp - Kaiu auhindadele</td>
+              <td>Alu Spordihoone</td>
+              <td>Keskuse tee 2, Alu</td>
+            </tr>
+            <tr>
+              <td class="text-center">30.10.2022</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Rapla Spordiveteranide Koondise (SVK) Meistrivõistlused
+                Lauatennises ja Koroonas
+              </td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">11.11.2022</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Koolinoorte lauatennise individuaal Meistrivõistlused (A, B, C,
+                D, E – klass)
+              </td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">12.11.2022</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Rapla Maakonna võistkondlikud Meistrivõistlused lauatennises
+              </td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">27.11.2022</td>
+              <td class="text-center">10:00</td>
+              <td>Raplamaa seeriavõistluse 2. etapp</td>
+              <td>Märjamaa Spordihoone</td>
+              <td>Staadioni 3, Märjamaa</td>
+            </tr>
+            <tr>
+              <td class="text-center">10.12.2022</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Raplamaa seeriavõistluse 3. etapp - Alu Spordiklubi auhindadele
+              </td>
+              <td>Alu Spordihoone</td>
+              <td>Keskuse tee 2, Alu</td>
+            </tr>
+            <tr>
+              <td class="text-center">17.12.2022</td>
+              <td class="text-center">10:00</td>
+              <td>Rapla Maakonna individuaal karikavõistlused lauatennises</td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">21.01.2023</td>
+              <td class="text-center">10:00</td>
+              <td>Raplamaa seeriavõistluse 4. etapp - Rapla auhindadele</td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">18.02.2023</td>
+              <td class="text-center">10:00</td>
+              <td>Raplamaa seeriavõistluse 5. etapp - Kohila auhindadele</td>
+              <td>Kohila Spordikompleks</td>
+              <td>Kooli 1, Kohila</td>
+            </tr>
+            <tr>
+              <td class="text-center">25.03.2023</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Raplamaa seeriavõistluse 6. etapp - Järvakandi auhindadele
+              </td>
+              <td>Järvakandi Kooli võimla</td>
+              <td>Nõlva 16, Järvakandi</td>
+            </tr>
+            <tr>
+              <td class="text-center">01.04.2023</td>
+              <td class="text-center">10:00</td>
+              <td>Raplamaa seeriavõistluse 7. etapp - Valtu auhindadele</td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">02.04.2023</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Rapla Maakonna meistrivõistlused - individuaal, paar ja segapaar
+              </td>
+              <td>Valtu Spordimaja</td>
+              <td>Saare 11, Kaerepere</td>
+            </tr>
+            <tr>
+              <td class="text-center">29.04.2023</td>
+              <td class="text-center">10:00</td>
+              <td>
+                Ennu Soodla mälestusvõistlus - Seeriavõistluse autasustamine
+              </td>
+              <td>Alu Spordihoone</td>
+              <td>Keskuse tee 2, Alu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light border-top">
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>

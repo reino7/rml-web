@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="h-100 wxauktc idc0_332" lang="et">
+  <head>
+    <%- include('./partials/head'); %>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header><%- include('./partials/header'); %></header>
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        <button
+          id="btnScrolToTop"
+          class="btn btn-secondary btnScrolToTop visually-hidden"
+          title="Lehekülje algusesse"
+        >
+          <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <div>
+          <h5 class="text-uppercase fw-bold text-center mb-3">
+            V&otilde;istlusjuhend
+          </h5>
+        </div>
+        <h6 class="fw-bold text-center mb-4">
+          Raplamaa lauatennise seeriav&otilde;istlus 2022-2023
+        </h6>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item border-0 fw-bold">Eesmärk</li>
+          <p class="ms-3">
+            Populariseerida lauatennist Raplamaal ja väljaspool maakonda.
+          </p>
+          <li class="list-group-item border-0 fw-bold">Süsteem</li>
+          <p class="ms-3">
+            Seeriavõistlus koosneb seitsmest etapist (Kaiu, Alu, Rapla,
+            Märjamaa, Järvakandi, Valtu, Kohila) millest arvesse lähevad 6
+            parema etapi tulemused. Mängitakse 2-miinuse süsteemis koos kõikide
+            kohtade väljamängimisega. Plussringi võitjad saavutavad 1-2 koha.
+            Kohtumised mängitakse reeglina "parem viiest". Registreerunud
+            võistlejad loositakse tabelisse viimase avaldatud reitingu alusel.
+            Juhul kui võistlejatel puudub ELTL reiting, mängijad loositakse
+            tabelisse.
+          </p>
+          <li class="list-group-item border-0 fw-bold">Vanuseklassid</li>
+          <p class="ms-3">Võisteldakse järgmistes vanuseklassides</p>
+          <p class="ms-3">
+            Naised: T-18a; N19-34; N35-44; N45-54; N55-64; N65+
+          </p>
+          <p class="ms-3">Mehed: P-18a; M19-34; M35-49; M50-59; M60-69; M70+</p>
+          <p class="ms-3">
+            Iga etapi korraldaja autasustab kõikide vanuseklasside 3 paremat
+            võistlejat, lisaks 3 paremat mees- ja naismängijat olenemata
+            vanusest. Võistleja lõpetab hooaja selles vanuseklassis, milles ta
+            ka alustas.
+          </p>
+
+          <li class="list-group-item border-0 fw-bold">Punktiarvestus</li>
+          <p class="ms-3">
+            1k-63p, 2k-60p, 3k-58p, 4k-57p, 5k-56p, 6k-55p jne. 60k-1p
+          </p>
+          <li class="list-group-item border-0 fw-bold">Registreerimine</li>
+          <p class="ms-3">
+            Võistluste algus kõigil etappidel kell 10.00. Nimi tuleb kirja panna
+            vähemalt 10. minutit enne võistluse algust.
+          </p>
+          <div
+            class="alert alert-danger ms-3 d-flex flex-row align-items-center"
+            role="alert"
+          >
+            <i class="fas fa-exclamation-triangle fa-2x me-3"></i>
+            <p class="mb-0">
+              Koos registreerumisega annab võistleja nõusoleku
+              võistlusprotokollide avalikustamiseks, võistlustulemuste ning
+              fotode kajastamiseks sotsiaalmeedias ja meedias (ajakirjandus,
+              televisioon, raadio), ning edetabeli koostamisel.
+            </p>
+          </div>
+
+          <li class="list-group-item border-0 fw-bold">
+            Osavõtjad ja osavõtumaksud
+          </li>
+          <p class="ms-3">
+            Osalema lubatakse kõiki õigeaegselt registreerunud mängijaid.
+          </p>
+          <p class="list-unstyled ms-3 mb-1">Osalustasud:</p>
+          <ul class="list-group ms-4 mb-3">
+            <li class="ms-3">Täiskasvanud-10 EUR;</li>
+            <li class="ms-3">Lapsed-5EUR;</li>
+            <li class="ms-3">Alla 10 aastased-tasuta.</li>
+          </ul>
+          <p class="ms-3">
+            Etappide osavõtumaksud kantakse täies ulatuses seeriavõistluse fondi
+            ja neid ei saa kasutada etappide kulude katteks. Laekunud summa
+            kasutatakse üldkokkuvõttes parimateks osutunute autasustamiseks.
+          </p>
+
+          <li class="list-group-item border-0 fw-bold">Autasustamine</li>
+          <p class="ms-3">
+            Üldvõitja kõikides vanuseklassides ja üldkokkuvõttes selgitatakse 6
+            parema etapi punktide liitmisel. Võrdsete punktide korral saab
+            parema koha võistleja, kes on etappidel tulnud paremale kohale, ühe
+            etapi võrdsuse korral võetakse arvesse järgmine etapp jne.
+          </p>
+          <li class="list-group-item border-0 fw-bold">Üldist</li>
+          <p class="ms-3">
+            Võistlustel võivad osaleda Eesti Vabariigi kodanikud ja alalise
+            elamisloaga välisriigi kodanikud ja eestis viibivad kodanikud kes
+            omavad selleks õiguslikku alust ning kes esindavad või on ELTL
+            liikmesklubide liikmed.
+          </p>
+          <div
+            class="alert alert-danger ms-3 d-flex flex-row align-items-center"
+            role="alert"
+          >
+            <i class="fas fa-exclamation-triangle fa-2x me-3"></i>
+            <p class="mb-0">
+              Eestis toimuvatel võistlustel on keelatud eksponeerida Venemaa ja
+              Valgevene rahvuslikku sümboolikat.
+            </p>
+          </div>
+          <div
+            class="alert alert-danger ms-3 d-flex flex-row align-items-center"
+            role="alert"
+          >
+            <i class="fas fa-exclamation-triangle fa-2x me-3"></i>
+            <p class="mb-0">
+              Vene Föderatsiooni ja Valgevene kodanikel ei ole õigust osaleda
+              Eesti Lauatenniseliidu võistluskalendris olevatel võistlustel
+              (k.a. neutraalse lipu all).
+            </p>
+          </div>
+          <p class="ms-3">
+            Võisteldakse ELTL-i poolt kinnitatud võistlusmääruste järgi. Oma
+            osavõtuga seotud kulud katab iga osavõtja ise. Oma tervisliku
+            seisundi eest vastutab iga osavõtja ise.
+          </p>
+          <p class="ms-3">
+            Kui mängija elab oma ebaõnnestumise välja korraldava klubi inventari
+            peal (laud, barjäär, võrk) ja tekitab eelnimetatud inventarile
+            nähtava kahju, siis on klubil õigus kahjustatud mängu inventar kahju
+            tekitanud mängijale maha müüa. Hinnaks on uue inventari
+            soetusmaksumus.
+          </p>
+          <div
+            class="alert alert-danger ms-3 d-flex flex-row align-items-center mb-5"
+            role="alert"
+          >
+            <i class="fas fa-exclamation-triangle fa-2x me-3"></i>
+            <p class="mb-0">
+              Korraldav toimkond jätab endale õiguse vajadusel teha juhendis
+              muudatusi.
+            </p>
+          </div>
+        </ol>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light border-top">
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>

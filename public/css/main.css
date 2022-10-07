@@ -5,26 +5,36 @@ body {
 main > .container {
   padding: 60px 15px 0;
 }
-.nav-item::after {
-  content:'';
-  display:block;
-  width:100%;
-	height: 0.1em;
-  background:#6f7377;
+/* select {
+  width: 150px;
+  margin: 50px;
+} */
+/* select:focus {
+  min-width: 150px;
+  width: auto;
+} */
+
+.nav-underline-anim::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.1em;
+  background: #6f7377;
   opacity: 0;
   transform: translate3d(0, 0.2em, 0);
   transform: scale(0);
-  transition: opacity 500ms, transform 500ms;
+  transition: opacity 300ms, transform 300ms;
   /* transition: 0.3s; */
 }
-.nav-item:hover::after {
-  width:100%;
+.nav-underline-anim:hover::after {
+  width: 100%;
   opacity: 1;
   transform: scale(1);
 }
 .nav-link {
-  /* font-size: 1.1rem;  Default 1rem */
-  /* transition:0.3s; */
+  /* Default 1rem */
+  font-size: 1.1rem;
+  transition: 0.3s;
   margin-top: 5px;
 }
 
@@ -34,4 +44,26 @@ main > .container {
 
 .text-underline-hover:hover {
   text-decoration: underline;
+}
+
+.navbar {
+  transition: top 700ms; /* Transition effect when sliding down (and up) */
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.01
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Back To Top */
+.btnScrolToTop {
+  position: fixed;
+  opacity: 0.6;
+  bottom: 15px;
+  right: 15px;
 }

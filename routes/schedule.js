@@ -1,18 +1,12 @@
-const express = require('express')
-let router = express.Router()
-
-let newDate = new Date(Date.now());
-
+const express = require('express');
+let router = express.Router();
 
 router.use(function (req, res, next) {
-  next()
-})
+  next();
+});
 
-router
-  .route("/")
-  .get((req, res) => {
-    res.render("schedule")
-  })
-
+router.route('/').get((req, res) => {
+  res.render('schedule');
+});
 
 module.exports = router;

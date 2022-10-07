@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="h-100 wxauktc idc0_332" lang="et">
+  <head>
+    <%- include('./partials/head'); %>
+    <script src="/js/axios-v0.26.0.min.js" defer></script>
+    <script src="/js/moment-v2.29.1.js" defer></script>
+    <script src="/js/competition-results-script.js" defer></script>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header><%- include('./partials/header'); %></header>
+
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <div>
+          <h5 class="text-uppercase fw-bold text-center mb-3">Tulemused</h5>
+        </div>
+
+        <table
+          class="table table-responsive table-striped table-bordered"
+          id="competitions"
+        >
+          <thead class="table-secondary">
+            <tr>
+              <th class="text-center">Kuupäev</th>
+              <th>Võistluse nimetus</th>
+              <th>Failid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center align-middle">23.10.2021</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 1. etapp - Kaiu auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2021-10-19-raplamaa-seeriavõistluse-1etapp-kaiu-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset text-underline-hover"
+                  href="files/2021-10-19-raplamaa-seeriavõistluse-tulemused-peale-1etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 1. etappi"
+                    aria-label="Tulemused peale 1. etappi"
+                  ></i>
+                  Tulemused peale 1. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">27.11.2021</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 2. etapp - Märjamaa auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2021-11-27-raplamaa-seeriavõistluse-2etapp-marjamaa-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2021-11-27-raplamaa-seeriavõistluse-tulemused-peale-2etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 2. etappi"
+                    aria-label="Tulemused peale 2. etappi"
+                  ></i>
+                  Tulemused peale 2. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">11.12.2021</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 3. etapp - Alu Spordiklubi auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2021-12-11-raplamaa-seeriavõistluse-3etapp-alu-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2021-12-11-raplamaa-seeriavõistluse-tulemused-peale-3etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 3. etappi"
+                    aria-label="Tulemused peale 3. etappi"
+                  ></i>
+                  Tulemused peale 3. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">19.12.2021</td>
+              <td class="align-middle">
+                Rapla Maakonna individuaal karikavõistlused
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2021-12-19-rapla-maakonna-individuaal-karikavõistlused-mehed.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Mehed võistlustabel"
+                    aria-label="Mehed võistlustabel"
+                  ></i>
+                  Mehed
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2021-12-19-rapla-maakonna-individuaal-karikavõistlused-naised.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Naised võistlustabel"
+                    aria-label="Naised võistlustabel"
+                  ></i>
+                  Naised
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">20.12.2021</td>
+              <td class="align-middle">Valtu trenni jõuluturniir 2021</td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2021-12-20-valtu-trenni-jouluturniir.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">22.01.2022</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 4. etapp - Rapla auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-01-22-raplamaa-seeriavõistluse-4etapp-rapla-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-01-22-raplamaa-seeriavõistluse-tulemused-peale-4etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 4. etappi"
+                    aria-label="Tulemused peale 4. etappi"
+                  ></i>
+                  Tulemused peale 4. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">19.02.2022</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 5. etapp - Kohila auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-02-19-raplamaa-seeriavõistluse-5etapp-kohila-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-02-19-raplamaa-seeriavõistluse-tulemused-peale-5etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 5. etappi"
+                    aria-label="Tulemused peale 5. etappi"
+                  ></i>
+                  Tulemused peale 5. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">12.03.2022</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 6. etapp - Järvakandi auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-03-12-raplamaa-seeriavõistluse-6etapp-jarvakandi-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-03-12-raplamaa-seeriavõistluse-tulemused-peale-6etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 6. etappi"
+                    aria-label="Tulemused peale 6. etappi"
+                  ></i>
+                  Tulemused peale 6. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">09.04.2022</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 7. etapp - Valtu auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-09-raplamaa-seeriavõistluse-7etapp-valtu-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Võistlustabel
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-04-09-raplamaa-seeriavõistluse-tulemused-peale-7etappi.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Tulemused peale 7. etappi"
+                    aria-label="Tulemused peale 7. etappi"
+                  ></i>
+                  Tulemused peale 7. etappi
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">16.04.2022</td>
+              <td class="align-middle">Rapla Maakonna meistrivõistlused</td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-16-rapla-maakonna-meistrivõistlused-individuaal-mehed.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Individuaal - Mehed
+                </a>
+                <br />
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-16-rapla-maakonna-meistrivõistlused-individuaal-naised.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Individuaal - Naised
+                </a>
+                <br />
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-16-rapla-maakonna-meistrivõistlused-paaris-mehed.jpg"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Paaris - Mehed
+                </a>
+                <br />
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-16-rapla-maakonna-meistrivõistlused-paaris-naised.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Paaris - Naised
+                </a>
+                <br />
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-16-rapla-maakonna-meistrivõistlused-segapaaris.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Segapaaris
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center align-middle">23.04.2022</td>
+              <td class="align-middle">Ennu Soodla mälestusvõistlus</td>
+              <td class="align-middle">
+                <a
+                  class="text-reset text-underline-hover"
+                  href="files/2022-04-23-ennu-soodla-malestusvoistlus-mehed.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Mehed
+                </a>
+                <br />
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-04-23-ennu-soodla-malestusvoistlus-naised.pdf"
+                  target="_blank"
+                >
+                  <i
+                    class="far fa-file-pdf"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title=""
+                    data-bs-original-title="Võistlustabel"
+                    aria-label="Võistlustabel"
+                  ></i>
+                  Naised
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light border-top">
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>
