@@ -4,7 +4,6 @@
     <%- include('./partials/head'); %>
     <script src="/js/axios-v0.26.0.min.js" defer></script>
     <script src="/js/moment-v2.29.1.js" defer></script>
-    <script src="/js/competition-results-script.js" defer></script>
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -15,10 +14,50 @@
         <div>
           <h5 class="text-uppercase fw-bold text-center mb-3">Tulemused</h5>
         </div>
+        <h6 class="fw-bold text-center mb-4">
+          Raplamaa lauatennise 34. hooaja seeriav&otilde;istluse 2022-2023
+          tulemused
+        </h6>
 
         <table
-          class="table table-responsive table-striped table-bordered"
-          id="competitions"
+          class="table table-responsive table-striped table-bordered mb-5"
+          id="competitions34"
+        >
+          <thead class="table-secondary">
+            <tr>
+              <th class="text-center">Kuupäev</th>
+              <th>Võistluse nimetus</th>
+              <th>Failid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center align-middle">08.10.2022</td>
+              <td class="align-middle">
+                Raplamaa seeriavõistluse 1. etapp - Kaiu auhindadele
+              </td>
+              <td class="align-middle">
+                <a
+                  class="text-underline-hover text-reset"
+                  href="files/2022-10-08-raplamaa-seeriavõistluse-1etapp-kaiu-auhindadele.pdf"
+                  target="_blank"
+                >
+                  <i class="far fa-file-pdf"></i>
+                  Võistlustabel
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h6 class="fw-bold text-center mb-4">
+          Raplamaa lauatennise 33. hooaja seeriav&otilde;istluse 2021-2022
+          tulemused
+        </h6>
+
+        <table
+          class="table table-responsive table-striped table-bordered mb-5"
+          id="competitions33"
         >
           <thead class="table-secondary">
             <tr>
