@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="h-100 wxauktc idc0_332" lang="et">
+  <head>
+    <%- include('./partials/head'); %>
+    <!-- <script src="/js/moment-v2.29.1.js" defer></script> -->
+
+    <!-- Bootstrap Table -->
+    <!-- Bootstrap Table -->
+    <script src="/js/jquery.min.js" defer></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/js/bootstrap-table.min.js" defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap-icons.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap-table.min.css" />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header><%- include('./partials/header'); %></header>
+
+    <main class="flex-shrink-0">
+      <div class="container mb-5">
+        <div>
+          <h5 class="text-uppercase fw-bold text-center mb-3">
+            Kalender with Bootstrap Table from Json file
+          </h5>
+        </div>
+
+        <table
+          id="table"
+          data-search="true"
+          data-search-align="left"
+          data-search-highlight="true"
+          data-show-search-button="true"
+          data-pagination="false"
+          data-sortable="true"
+          data-show-columns="false"
+          data-toggle="table"
+          data-flat="true"
+          data-url="/files/calendar/calendar-file.json"
+          class="table-striped"
+        >
+          <thead class="table-secondary">
+            <tr>
+              <th data-field="Kuupäev" data-sortable="true">Kuupäev</th>
+              <th data-field="Algusaeg" data-sortable="true">Algusaeg</th>
+              <th data-field="voistluse_nimetus" data-sortable="true">
+                Võistluse nimetus
+              </th>
+              <th data-field="Võistluskoht" data-sortable="true">
+                Võistluskoht
+              </th>
+              <th data-field="Aadress" data-sortable="true">Aadress</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light border-top">
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>

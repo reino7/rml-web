@@ -1,10 +1,12 @@
-# Ignored folders and files
+# Ignored folders
 node_modules
 config
-.env*
+logs
 .DS_Store
 
-# Ignore Logs folder and files
-logs
+# Ignore file types
+.env*
 *.log
 *.pdf
+*.jpg
+*.jpeg

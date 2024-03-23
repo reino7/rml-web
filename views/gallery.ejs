@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="h-100 wxauktc idc0_332" lang="et">
+  <head>
+    <%- include('./partials/head'); %>
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="/js/jquery-v2.1.1.min.js"
+      defer
+    ></script>
+
+    <!-- nanogallery2 -->
+    <link href="/css/nanogallery2.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/css/nanogallery2.woff.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="/js/jquery.nanogallery2.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header><%- include('./partials/header'); %></header>
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div>
+          <h5 class="text-uppercase fw-bold text-center mb-3">
+            Raplamaa Lauatennise 35. hooaja (2023-2024) võistluste pildigalerii
+          </h5>
+        </div>
+        <!-- ### gallery settings ### -->
+        <div
+          id="rmlGallery"
+          data-nanogallery2='{ 
+          "itemsBaseURL": "https://www.rapla.lt/pic/35-season-2023-2024/",
+          "thumbnailWidth":             "auto",
+          "thumbnailHeight":            250,
+          "thumbnailBorderVertical":    0,
+          "thumbnailBorderHorizontal":  0,
+          "thumbnailDisplayTransition": "",
+          "thumbnailLabel": {
+            "position": "overImageOnBottom",
+            "titleMultiLine": true
+          },
+          "thumbnailAlignment": "       center",
+          "thumbnailGutterWidth":       20,
+          "thumbnailGutterHeight":      20,
+          "thumbnailOpenImage":         true,
+          "thumbnailLevelUp":           false,
+          "displayBreadcrumb":          true,
+          "breadcrumbAutoHideTopLevel": true
+          "breadcrumbHideIcons":        false,
+          "viewerTools":      {
+            "topLeft":   "pageCounter, playPauseButton",
+            "topRight":  "downloadButton, shareButton, rotateLeft, rotateRight, zoomButton, fullscreenButton, closeButton" },
+            "viewerTheme":              "dark",
+            "imageTransition":          "swipe"
+          }'
+        >
+          <!-- ### raplamaa-seeriavoistluse-5etapp gallery - 49 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2024-02-17-raplamaa-seeriavoistluse-5etapp/thumbs/2024-02-17-raplamaa-seeriavoistluse-5etapp-23.jpg"
+            data-ngkind="album"
+            data-ngid="5"
+          >
+            5. etapp - Kohila auhindadele
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 49; i++) { %>
+          <a
+            href="2024-02-17-raplamaa-seeriavoistluse-5etapp/2024-02-17-raplamaa-seeriavoistluse-5etapp-<%= i %>.jpg"
+            data-ngThumb="2024-02-17-raplamaa-seeriavoistluse-5etapp/thumbs/2024-02-17-raplamaa-seeriavoistluse-5etapp-<%= i %>.jpg"
+            data-ngid="5<%= i %>"
+            data-ngalbumid="5"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+
+          <!-- ### raplamaa-seeriavoistluse-4etapp gallery - 112 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2024-01-13-raplamaa-seeriavoistluse-4etapp/thumbs/2024-01-13-raplamaa-seeriavoistluse-4etapp-65.jpg"
+            data-ngkind="album"
+            data-ngid="4"
+          >
+            4. etapp - Rapla auhindadele
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 112; i++) { %>
+          <a
+            href="2024-01-13-raplamaa-seeriavoistluse-4etapp/2024-01-13-raplamaa-seeriavoistluse-4etapp-<%= i %>.jpg"
+            data-ngThumb="2024-01-13-raplamaa-seeriavoistluse-4etapp/thumbs/2024-01-13-raplamaa-seeriavoistluse-4etapp-<%= i %>.jpg"
+            data-ngid="4<%= i %>"
+            data-ngalbumid="4"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+
+          <!-- ### 2023-12-30-kohila-lahtised-meistrivoistlused gallery - 71 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2023-12-30-kohila-lahtised-meistrivoistlused/thumbs/2023-12-30-kohila-lahtised-meistrivoistlused-70.jpg"
+            data-ngkind="album"
+            data-ngid="8"
+          >
+            Kohila Lahtised MV
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 71; i++) { %>
+          <a
+            href="2023-12-30-kohila-lahtised-meistrivoistlused/2023-12-30-kohila-lahtised-meistrivoistlused-<%= i %>.jpg"
+            data-ngThumb="2023-12-30-kohila-lahtised-meistrivoistlused/thumbs/2023-12-30-kohila-lahtised-meistrivoistlused-<%= i %>.jpg"
+            data-ngid="8<%= i %>"
+            data-ngalbumid="8"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+
+          <!-- ### raplamaa-seeriavoistluse-3etapp gallery - 43 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2023-12-09-raplamaa-seeriavoistluse-3etapp/thumbs/2023-12-09-raplamaa-seeriavoistluse-3etapp-29.jpg"
+            data-ngkind="album"
+            data-ngid="3"
+          >
+            3. etapp - Alu auhindadele
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 43; i++) { %>
+          <a
+            href="2023-12-09-raplamaa-seeriavoistluse-3etapp/2023-12-09-raplamaa-seeriavoistluse-3etapp-<%= i %>.jpg"
+            data-ngThumb="2023-12-09-raplamaa-seeriavoistluse-3etapp/thumbs/2023-12-09-raplamaa-seeriavoistluse-3etapp-<%= i %>.jpg"
+            data-ngid="3<%= i %>"
+            data-ngalbumid="3"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+
+          <!-- ### raplamaa-seeriavoistluse-2etapp gallery - 43 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2023-11-12-raplamaa-seeriavoistluse-2etapp/thumbs/2023-11-12-raplamaa-seeriavoistluse-2etapp-49.jpg"
+            data-ngkind="album"
+            data-ngid="2"
+          >
+            2. etapp - Märjamaa auhindadele
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 63; i++) { %>
+          <a
+            href="2023-11-12-raplamaa-seeriavoistluse-2etapp/2023-11-12-raplamaa-seeriavoistluse-2etapp-<%= i %>.jpg"
+            data-ngThumb="2023-11-12-raplamaa-seeriavoistluse-2etapp/thumbs/2023-11-12-raplamaa-seeriavoistluse-2etapp-<%= i %>.jpg"
+            data-ngid="2<%= i %>"
+            data-ngalbumid="2"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+
+          <!-- ### raplamaa-seeriavoistluse-1etapp gallery - 36 pictures ### -->
+          <!-- ### album cover -->
+          <a
+            href=""
+            data-ngthumb="2023-10-08-raplamaa-seeriavoistluse-1etapp/thumbs/2023-10-08-raplamaa-seeriavoistluse-1etapp-36.jpg"
+            data-ngkind="album"
+            data-ngid="1"
+          >
+            1. etapp - Kaiu auhindadele
+          </a>
+          <!-- ### album content -->
+          <% for(let i=1; i <= 36; i++) { %>
+          <a
+            href="2023-10-08-raplamaa-seeriavoistluse-1etapp/2023-10-08-raplamaa-seeriavoistluse-1etapp-<%= i %>.jpg"
+            data-ngThumb="2023-10-08-raplamaa-seeriavoistluse-1etapp/thumbs/2023-10-08-raplamaa-seeriavoistluse-1etapp-<%= i %>.jpg"
+            data-ngid="1<%= i %>"
+            data-ngalbumid="1"
+          ></a>
+          <% } %>
+          <!-- ### gallery content end ### -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light border-top">
+      <%- include('./partials/footer'); %>
+    </footer>
+  </body>
+</html>

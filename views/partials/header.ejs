@@ -28,18 +28,155 @@
       class="navbar-list collapse navbar-collapse justify-content-end"
       id="navbar-list"
     >
-      <ul class="navbar-nav text-uppercase fw-bold">
+      <ul class="navbar-nav fw-bold">
         <li class="nav-item nav-underline-anim me-2">
-          <a class="nav-link text-dark" href="/ajakava">Ajakava</a>
-        </li>
-        <li class="nav-item nav-underline-anim me-2">
-          <a class="nav-link text-dark" href="/voistlusjuhend">
-            V&otilde;istlusjuhend
+          <a class="nav-link text-uppercase text-dark" href="/ajakava">
+            Ajakava
           </a>
         </li>
-        <li class="nav-item nav-underline-anim me-2">
-          <a class="nav-link text-dark" href="/tulemused">Tulemused</a>
+        <li class="nav-item nav-underline-anim dropdown me-2">
+          <a
+            class="nav-link dropdown-toggle text-uppercase text-dark"
+            href="/voistlusjuhend"
+            id="navbarCompetitionGuidesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Juhendid
+          </a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarCompetitionGuidesDropdown"
+          >
+            <li>
+              <a
+                class="dropdown-item"
+                href="/juhendid/seeriavoistlus-2023-2024"
+              >
+                Seeriavõistlused 2023/2024
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/kohila-lahtised-meistrivoistlused-2023.pdf"
+                target="_blank"
+              >
+                Kohila lahtised Meistrivõistlused
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item disabled" href="#">
+                Ennu Soodla Mälestusvõistlus
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/raplamaa-noorte-lauatennisesari-uldjuhend-2024.pdf"
+                target="_blank"
+              >
+                Noorte lauatennisesari 2024
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/rapla-maakonna-meistrivoistlused-individuaal-paar-segapaar-2024.pdf"
+                target="_blank"
+              >
+                Individuaal, paaris ja segapaaris Meistrivõistlused
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/rapla-maakonna-voistkondlikud-meistrivoistlused-2023.pdf"
+                target="_blank"
+              >
+                Võistkondlikud Meistrivõistlused
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/rapla-maakonna-individuaal-karikavoistlused-2023.pdf"
+                target="_blank"
+              >
+                Individuaal Karikavõistlused
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/rapla-maakonna-koolinoorte-meistrivoistlused-2023.pdf"
+                target="_blank"
+              >
+                Koolinoorte Meistrivõistlused
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/rapla-spordiveteranide-koondise-meistrivoistlused-2023.pdf"
+                target="_blank"
+              >
+                Spordiveteranide Koondise (SVK) Meistrivõistlus
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/files/competition-guides/raplamaa-spordimangud-2023.pdf"
+                target="_blank"
+              >
+                Spordimängud 2023
+                <i class="fas fa-external-link-alt ms-2 opacity-75"></i>
+              </a>
+            </li>
+          </ul>
         </li>
+        <li class="nav-item nav-underline-anim dropdown me-2">
+          <a
+            class="nav-link dropdown-toggle text-uppercase text-dark"
+            href="/tulemused"
+            id="navbarResultsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Tulemused
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarResultsDropdown">
+            <li>
+              <a class="dropdown-item" href="/tulemused/35-hooaeg-2023-2024">
+                35. hooaeg (2023-2024)
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/tulemused/34-hooaeg-2022-2023">
+                34. hooaeg (2022-2023)
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/tulemused/33-hooaeg-2021-2022">
+                33. hooaeg (2021-2022)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <a class="nav-link text-uppercase text-dark" href="/treeningud">
+          Treeningud
+        </a>
       </ul>
     </div>
   </div>
